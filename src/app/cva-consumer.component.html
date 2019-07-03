@@ -1,2 +1,3 @@
 <cva-wrapper *ngFor="let c of internalForm.controls" [formControl]="c"></cva-wrapper>
 <h1>CVA Consumer form array is: {{internalForm.status}}</h1>
+<h3> To reproduce the issue just put any value in the second box to make it valid. Then any value in the first box to make that one valid as well. Now you will notice that after async validation finishes the CVA consumer is still invalid. Finally change the value in the second box and you will see that the CVA consumer updates to correctly reflect the validity.</h3>
