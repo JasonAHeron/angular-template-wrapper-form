@@ -1,0 +1,13 @@
+<form #form="ngForm">
+  <h2> Async validated field w/ required </h2>
+	<input type="url"
+         required
+         asyncValidator
+         name="imageUrl"
+         [(ngModel)]="content.imageUrl">
+  <h2> Simple required field </h2>
+  <input required
+         name="title"
+         [(ngModel)]="content.title">
+</form>
+<h1>Template form component is: {{form.status}}</h1>
